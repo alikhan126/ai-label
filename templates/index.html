@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>aidev</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+ <div class="wrapper">
+  <div id="uploader">
+     <p class="long-heading">
+          Drag image file here or <br>
+          Uploaded from your computer.
+        <img src="https://coloradocustomfloors.com/wp-content/uploads/2017/05/gallery_icon_new.png">
+     </p>    
+  </div>
+  <form id="form" accept-charset="multipart/form-data">
+    <input type="file" id="file" accept="image/*" >
+  </form>
+  
+  <div id="result">
+     <div class="photo">
+        <div style="height:244px">
+          <img id="preview">
+          <p id="p-name"> </p>
+       </div>
+     </div>
+     <div class="labels">
+        <div class="cloud-vision">
+        </div>
+        <hr>
+        <div class="database">
+        </div>
+     </div>
+  </div>
+ </div>
+</body>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>  
+</html>
